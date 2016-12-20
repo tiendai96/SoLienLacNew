@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:id="@+id/lnDialog">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@drawable/dialog_radiustop"
+        android:layout_height="35dp">
+
+        <TextView
+            android:text="Tin thông báo"
+            android:textColor="#fff"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="X"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:id="@+id/btnXtinnhan"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Cả nguồn sống bỗng chốc thu bé lại vừa bằng 1 cô gái Hay anh vẫn sẽ lặng lẽ kế bên Dù ko nắm tay nhưng đường chung mãi mãi Và từ ấy ánh mắt anh hồn nhiên đến lạ"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_txtNoidungtinnhan" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:srcCompat="@drawable/ic_clock"
+            android:id="@+id/imageView3" />
+
+        <TextView
+            android:text="09/12/1996"
+            android:textStyle="italic"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:textSize="12dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/dialog_textViewNgaynhantinnhan"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="@drawable/dialog_radiusbot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Đóng"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:background="@drawable/style_buttondiem"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/buttonDongTinnhan" />
+    </LinearLayout>
+</LinearLayout>

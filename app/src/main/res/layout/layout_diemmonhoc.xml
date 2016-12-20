@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_height="match_parent">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/LinearLayout">
+
+        <TabHost
+            android:id="@+id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:background="#d3d6db"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/swipe_refresh_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:cacheColorHint="@android:color/transparent"
+                            android:divider="@null"
+                            android:id="@+id/listViewBangdiemHK1" />
+                        <TextView
+                            android:textSize="30dp"
+                            android:id="@+id/textViewTrangthaiBD"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        </android.support.v4.widget.SwipeRefreshLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#d3d6db"
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/swipe_refresh_layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:cacheColorHint="@android:color/transparent"
+                            android:divider="@null"
+                            android:id="@+id/listViewBangdiemHK2"/>
+                        <TextView
+                            android:textSize="30dp"
+                            android:id="@+id/textViewTrangthaiBD2"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        </android.support.v4.widget.SwipeRefreshLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+    </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            app:elevation="6dp"
+            android:layout_marginBottom="19dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_action_refresh"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false" />
+        </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

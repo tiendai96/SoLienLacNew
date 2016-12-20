@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"><!-- Trạng thái khi nút click -->
+        <shape >
+            <stroke android:color="#8E44AD"
+                android:width="3dp"/>
+            <corners android:radius="10dp"/>
+            <padding android:bottom="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:left="10dp"/>
+            <gradient android:startColor="#8E44AD"
+                android:endColor="#8E44AD"
+                />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:color="#8E44AD"
+                android:width="3dp"/>
+            <corners android:radius="10dp"/>
+            <padding android:bottom="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:left="10dp"/>
+            <solid android:color="#dc8e44ad"/>
+        </shape>
+    </item>
+</selector>

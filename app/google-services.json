@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "391507620041",
+    "firebase_url": "https://solienlac-f7de6.firebaseio.com",
+    "project_id": "solienlac-f7de6",
+    "storage_bucket": "solienlac-f7de6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391507620041:android:63773ac6465459db",
+        "android_client_info": {
+          "package_name": "com.hdpro.solienlac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391507620041-i9v159cis4qr8i09b0v45627v2bor07b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbcWmb_kt712eYmqkNFHIkP4cnhvuKaLA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391507620041-i9v159cis4qr8i09b0v45627v2bor07b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Sổ Liên Lạc</string>
+    <string name="thongtinchung">Thông tin chung</string>
+    <string-array name="NaviMenu">
+        <item>Tin nhắn</item>
+        <item>Điểm môn học</item>
+        <item>Thời khóa biểu</item>
+        <item>Phản hồi</item>
+        <item>Thoát</item>
+    </string-array>
+    <string name="drawer_open">Mo menu</string>
+    <string name="drawer_close">Dong menu</string>
+
+    <string name="tiep">TIẾP</string>
+    <string name="boqua">BỎ QUA</string>
+    <string name="ketthuc">HIỂU RỒI</string>
+
+</resources>

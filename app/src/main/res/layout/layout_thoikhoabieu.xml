@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/colorBackground"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_user"
+                android:id="@+id/imageView2" />
+
+            <TextView
+                android:paddingLeft="5dp"
+                android:text="Nguyễn Quang Hưng - Lớp 1A"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txtTenhocsinh"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:textAllCaps="true"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_marginTop="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/ic_thu2"
+                        android:id="@+id/imgIconthu2" />
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        android:id="@+id/textView72"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:listSelector="@android:color/transparent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lvthu2" />
+                    </LinearLayout>
+
+            </LinearLayout>
+                <TextView
+                    android:background="#2226a9"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/textView161" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/ic_thu3"
+                        android:id="@+id/imgIconthu3" />
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        android:id="@+id/textView73"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lvthu3" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                    <TextView
+                        android:background="#30ac27"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/textView16" />
+
+                    <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/ic_thu4"
+                        android:id="@+id/imgIconthu4" />
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        android:id="@+id/textView74"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lvthu4" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:background="#cc2626"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/textView1622" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/ic_thu5"
+                        android:id="@+id/imgIconthu" />
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        android:id="@+id/textView75"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lvthu5" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:background="#eaa503"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/textView1614" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/ic_thu6"
+                        android:id="@+id/imgIconthu6" />
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        android:id="@+id/textView76"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lvthu6" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:background="#7b25b1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/textView1613" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/ic_thu7"
+                        android:id="@+id/imgIconthu7" />
+
+                    <TextView
+                        android:text=""
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#ccc"
+                        android:id="@+id/textView7"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lvthu7" />
+                    </LinearLayout>
+                    <TextView
+                        android:background="#329e7a"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:id="@+id/textView16313" />
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            app:elevation="6dp"
+            android:layout_marginBottom="19dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_action_refresh"
+            app:borderWidth="0dp"
+            app:fabSize="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

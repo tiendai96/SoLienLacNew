@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <!-- View chinh chua noi dung -->
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/LinearLayoutNavi"
+            android:layout_gravity="start"
+            android:layout_width="240dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/LinearLayoutTenhocsinh"
+                android:background="#e1e1e1"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_user"
+                    android:id="@+id/imageViewitemNavi" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textColor="#E64B44"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textViewitemNavi"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="Nguyễn Quang Hưng" />
+
+            </LinearLayout>
+
+            <ListView android:id="@+id/lvMenu"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:background="@android:color/background_light"/>
+        </LinearLayout>
+
+        <!-- view ben trai, navigation drawer, la listview -->
+    </android.support.v4.widget.DrawerLayout>

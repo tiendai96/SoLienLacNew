@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/search_action"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:showAsAction="ifRoom"
+        android:title="Tìm kiếm"/>
+    <item
+        android:id="@+id/setting_action"
+        android:title="Cài Đặt"/>
+    <item
+        android:id="@+id/logout_action"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Đăng xuất"/>
+    <item
+        android:id="@+id/thoat_action"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Thoát"/>
+</menu>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/style_background_login"
+    tools:context="com.hdpro.solienlac.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_marginTop="80dp"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_logo"
+                    android:id="@+id/imageView4" />
+
+                <TextView
+                    android:text="Tên đăng nhập"
+                    android:textColor="#fff"
+                    android:padding="4dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:background="@drawable/style_edittext"
+                    android:id="@+id/editTextTendangnhap"
+                    android:imeOptions="actionNext"
+                    android:hint="nhập tên đăng nhập" />
+
+                <TextView
+                    android:text="Mật khẩu"
+                    android:textColor="#fff"
+                    android:padding="4dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6" />
+
+                <EditText
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:background="@drawable/style_edittext"
+                    android:ems="10"
+                    android:id="@+id/editTextMatkhau"
+                    android:imeOptions="actionDone"
+                    android:hint="nhập mật khẩu" />
+
+                <Button
+                    
+                    android:text="Đăng nhập"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/style_button_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonDangnhap" />
+            </LinearLayout>
+
+            <TextView
+                android:text="© 2016"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView12" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

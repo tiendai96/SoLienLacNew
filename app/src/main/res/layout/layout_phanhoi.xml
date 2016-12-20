@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabDiem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="530dp">
+
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="Gọi điện trực tiếp"
+                                    android:paddingTop="2dp"
+                                    android:paddingBottom="2dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView17"
+                                    android:textSize="18dp"
+                                    android:textColor="#2f7af2"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingBottom="1dp"
+                                    android:paddingTop="1dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:text="GVCN Phạm Công Hòa:"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/textViewGiaovienchunhiem"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textViewSDT"
+                                        android:text="0915529889"
+                                        android:textAlignment="viewEnd" />
+
+                                </LinearLayout>
+
+                                <Button
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="GỌI GIÁO VIÊN CHỦ NHIỆM"
+                                    android:textColor="#Fff"
+                                    android:background="@drawable/style_button_green"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:id="@+id/buttonGoidien" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:text="Gửi phản hồi"
+
+                                        android:textSize="18dp"
+                                        android:textColor="#2f7af2"
+                                        android:textStyle="bold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView20" />
+                                    <TextView
+                                        android:text="(yêu cầu 3G hoặc wifi)"
+                                        android:paddingLeft="10dp"
+                                        android:textStyle="italic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent" />
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="495dp">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:padding="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentTop="true">
+
+                                        <TextView
+                                            android:text="Tiêu đề"
+                                            android:paddingLeft="5dp"
+                                            android:paddingBottom="1dp"
+                                            android:paddingTop="1dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView2"
+                                            android:textSize="16sp" />
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="textPersonName"
+                                            android:ems="10"
+                                            android:background="@drawable/style_edittext"
+                                            android:id="@+id/editTextTieudePhanhoi"
+                                            android:imeOptions="actionNext"
+                                            />
+
+                                        <TextView
+                                            android:text="Nội dung"
+                                            android:paddingLeft="5dp"
+                                            android:paddingBottom="1dp"
+                                            android:paddingTop="1dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/textView"
+                                            android:textSize="16dp" />
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="120dp"
+                                            android:inputType="textMultiLine"
+                                            android:ems="10"
+                                            android:background="@drawable/style_edittext"
+                                            android:id="@+id/editTextNoidungPhanhoi"
+                                            android:imeOptions="actionNext"
+                                            />
+
+                                        <Button
+                                            android:layout_marginTop="10dp"
+                                            android:text="Gửi phản hồi"
+                                            android:textColor="#fff"
+                                            android:textStyle="bold"
+                                            android:background="@drawable/style_button_gray"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:imeOptions="actionDone"
+                                            android:id="@+id/buttonGuiphanhoi" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabDsPH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/lvDanhsachPhanhoi" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

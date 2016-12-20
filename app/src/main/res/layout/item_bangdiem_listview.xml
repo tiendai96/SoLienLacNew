@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/background_item_bangdiem"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Toán"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#f78001"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:id="@+id/textViewTenmonhoc"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:stretchColumns="*"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="Hệ số 1:"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView25"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:text="[Điểm]"
+                        android:textColor="@color/colorValue"
+                        android:textAlignment="textEnd"
+                        android:paddingRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textViewHeso1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="Hệ số 2:"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView27"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:text="[Điểm]"
+
+                        android:textColor="@color/colorValue"
+                        android:textAlignment="textEnd"
+                        android:paddingRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textViewHeso2" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="Điểm thi:"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView29"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:textColor="@color/colorValue"
+                        android:text="[Điểm]"
+                        android:textAlignment="textEnd"
+                        android:paddingRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textViewThi" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

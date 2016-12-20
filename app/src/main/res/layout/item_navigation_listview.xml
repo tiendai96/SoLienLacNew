@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:padding="7dp"
+            app:srcCompat="@drawable/ic_sms"
+            android:id="@+id/imageViewitemNavi" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewitemNavi"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:hint="Hiển thị" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:id="@+id/textView19" />
+
+</LinearLayout>
